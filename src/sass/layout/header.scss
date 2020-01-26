@@ -1,0 +1,10 @@
+.navbar {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 80%;
+    margin-left: auto;
+  }
+}
