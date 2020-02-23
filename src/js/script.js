@@ -7,4 +7,5 @@ const body = document.body;
 
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
+  hamburger.classList.toggle("open");
 });

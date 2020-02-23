@@ -62,6 +62,23 @@
     background-color: #000;
   }
 
+  // Animation
+  .hamburger.open .line {
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .hamburger.open .line:nth-child(1) {
+    transform: rotate(50deg) translate(15%);
+  }
+  .hamburger.open .line:nth-child(2) {
+    display: none;
+  }
+  .hamburger.open .line:nth-child(3) {
+    transform: rotate(-50deg) translate(15%);
+  }
+
   // Links
   .nav-links {
     position: fixed;
