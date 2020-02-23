@@ -62,7 +62,7 @@
     background-color: #000;
   }
 
-  // Animation
+  // Animation Open
   .hamburger.open .line {
     -webkit-transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
@@ -77,6 +77,22 @@
   }
   .hamburger.open .line:nth-child(3) {
     transform: rotate(-50deg) translate(15%);
+  }
+  // Animation Close
+  .hamburger .line {
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .hamburger .line:nth-child(1) {
+    transform: rotate(0deg) translate(0%);
+  }
+  .hamburger .line:nth-child(2) {
+    display: block;
+  }
+  .hamburger .line:nth-child(3) {
+    transform: rotate(0deg) translate(0%);
   }
 
   // Links
