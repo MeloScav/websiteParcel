@@ -42,6 +42,7 @@
     position: fixed;
     flex-direction: column;
     opacity: 0;
+    pointer-events: none;
     background-color: #fff;
     height: 100vh;
     width: 100%;
@@ -49,14 +50,17 @@
   &.open {
     display: flex;
     opacity: 1;
+    pointer-events: initial;
   }
   &.open li {
     opacity: 1;
+    pointer-events: initial;
   }
   li {
     transition: all 0.3s ease-in-out;
     @media screen and(max-width:768px) {
       opacity: 0;
+      pointer-events: none;
     }
   }
 }
