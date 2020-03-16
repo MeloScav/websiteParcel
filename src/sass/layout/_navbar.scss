@@ -24,10 +24,11 @@
 
 // LOGO
 .logo {
-  width: 6rem;
+  width: 8rem;
   height: auto;
   display: flex;
   align-items: center;
+  transition: all 0.3s ease-out;
   .logo-img {
     max-width: 100%;
     height: auto;
@@ -70,6 +71,7 @@
   }
   a {
     color: $white;
+    font-size: 20px;
     @media screen and(max-width:768px) {
       color: $black;
     }
@@ -155,7 +157,13 @@
 .header.scroll-change .navbar {
   background-color: $white;
   box-shadow: 0px 5px 5px rgba($black, 0.3);
+  min-height: calc(#{$height-nav} - 3vh);
   a {
+    font-size: 16px;
     color: $black;
   }
+}
+
+.header.scroll-change .logo {
+  width: 6rem;
 }
