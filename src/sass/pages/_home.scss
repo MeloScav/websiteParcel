@@ -1,3 +1,4 @@
+// BANNER
 .banner {
   .gizmo-img {
     width: 100%;
@@ -5,5 +6,20 @@
     -o-object-fit: cover;
     object-fit: cover;
     z-index: 0;
+  }
+}
+
+// TITLE
+.divTitle {
+  margin: calculateRem(30);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    margin-top: calculateRem(5);
+    font-size: calculateRem(18);
+    font-weight: normal;
+    font-style: italic;
   }
 }

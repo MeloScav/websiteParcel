@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 960px;
+  max-width: calculateRem(960);
   width: 100%;
 }
 
@@ -82,7 +82,7 @@
   }
   a {
     color: $white;
-    font-size: 20px;
+    font-size: calculateRem(20);
     @media screen and(max-width:768px) {
       color: $black;
     }
@@ -119,9 +119,9 @@
     z-index: 2;
   }
   .line {
-    margin: 5px;
-    width: 30px;
-    height: 3px;
+    margin: calculateRem(5);
+    width: calculateRem(30);
+    height: calculateRem(3);
     background-color: $white;
   }
 
@@ -166,8 +166,8 @@
   box-shadow: 0px 5px 5px rgba($black, 0.3);
   min-height: calc(#{$height-nav} - 3.5vh);
   a {
-    font-size: 16px;
-    color: $black;
+    font-size: calculateRem(17);
+    color: #00818a;
   }
 }
 
