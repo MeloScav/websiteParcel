@@ -59,7 +59,7 @@
     flex-direction: column;
     opacity: 0;
     pointer-events: none;
-    background-color: $white;
+    background-color: $primaryColor;
     min-height: 100vh;
     width: 100%;
   }
@@ -72,6 +72,7 @@
     opacity: 1;
     pointer-events: initial;
   }
+
   li {
     transition: all 0.3s ease-in-out;
     @media screen and(max-width:768px) {
@@ -91,7 +92,10 @@
 
 //Links hover
 .nav-links li:hover a {
-  color: $primaryLight;
+  color: #bb6700;
+  @media screen and(min-width:768px) {
+    color: $primaryLight;
+  }
 }
 
 //Links transitions
@@ -170,13 +174,15 @@
   background-color: $white;
   box-shadow: 0px 5px 5px rgba($black, 0.3);
   min-height: calc(#{$height-nav} - 3.5vh);
-  a {
-    font-size: calculateRem(17);
-    color: $primaryDark;
-  }
 
-  .nav-links li:hover a {
-    color: $primaryLight;
+  @media screen and(min-width:768px) {
+    a {
+      font-size: calculateRem(17);
+      color: $primaryDark;
+    }
+    .nav-links li:hover a {
+      color: $primaryLight;
+    }
   }
 }
 
