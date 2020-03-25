@@ -42,7 +42,7 @@
   height: calculateRem(260);
   // text-decoration: none;
   background-color: $white;
-  border: 1px solid #d68524;
+  border: 1px solid $secondaryColor;
   border-radius: calculateRem(20);
   overflow: hidden;
   transition: background-color 0.35s ease-in-out;
@@ -76,7 +76,7 @@
     left: 0;
     transform: translate(0%, -50%);
     width: 100%;
-    color: #fff;
+    color: $white;
     font-size: large;
     opacity: 0;
     transition: opacity 0.35s ease-out;
@@ -98,10 +98,10 @@
   }
   button {
     padding: 10px 20px 10px 20px;
-    background-color: #53bec6;
+    background-color: $primaryColor;
 
     font-weight: bold;
-    border: 1px solid #46a8af;
+    border: 1px solid $primaryLight;
     border-radius: 8px;
   }
 }

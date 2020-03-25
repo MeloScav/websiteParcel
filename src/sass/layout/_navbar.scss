@@ -89,6 +89,11 @@
   }
 }
 
+//Links hover
+.nav-links li:hover a {
+  color: $primaryLight;
+}
+
 //Links transitions
 .nav-links li:nth-child(1) {
   transition-delay: 0.2s;
@@ -167,7 +172,11 @@
   min-height: calc(#{$height-nav} - 3.5vh);
   a {
     font-size: calculateRem(17);
-    color: #00818a;
+    color: $primaryDark;
+  }
+
+  .nav-links li:hover a {
+    color: $primaryLight;
   }
 }
 
